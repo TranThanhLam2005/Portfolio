@@ -5,8 +5,8 @@ import { FadeInSection } from '../src/FadeInSection';
 // import icons
 import Image from '../src/assets/avat.jpg';
 import RMIT from '../src/assets/logo.png';
-import LendingBook from '../src/assets/lending.png';
 import Eventify from '../src/assets/event.png';
+import FieldInspection from '../src/assets/fieldinspection.png';
 import Campus from '../src/assets/campus.png';
 import Rental from '../src/assets/rental.png';
 import { Boxes, Wrench, Languages, Lightbulb, Mail, Home, Briefcase, Code2 } from 'lucide-react';
@@ -94,7 +94,7 @@ const App = () => {
                 {/* Description */}
                 <p className="mt-3 text-gray-800 leading-relaxed">
                   Attending a globally ranked institution (Top 123 worldwide, Top 10 in
-                  Australia) in HoChiMinh City, Vietnam. Current GPA: 3.5/4. Focusing on software
+                  Australia) in HoChiMinh City, Vietnam. Current GPA: 3.6/4. Focusing on software
                   engineering principles, algorithms, data structures, and modern
                   development practices. Actively collaborative projects.
                 </p>
@@ -109,31 +109,13 @@ const App = () => {
             <div className="w-10 h-1 bg-black rounded mb-6"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-x-4 md:gap-y-6 mt-10 justify-items-center">
               <ProjectCard
-                image={Campus}
-                title="Campus Companion"
-                date="July 2025 - August 2025"
-                description="Campus Companion is an Android app that helps students connect, explore, and enjoy campus life with events, food ordering, study spots, and smart place recommendations."
-                tags={["Kotlin ", "Jetpack Compose", "Firebase", "MVVM Architecture"]}
-                website="https://www.youtube.com/watch?v=rK8ToKtuQ54"
-                source="https://www.hp.com"
-              />
-              <ProjectCard
                 image={Eventify}
                 title="PlanEvnt - Full Stack Web Application"
                 date="April 2025 - May 2025"
                 description="Event Planning & Management System is a full-stack PERN web app for creating, managing, and joining events, with role-based interfaces for admins, organizers, and attendees."
                 tags={["PostgreSQL", "ExpressJS", "NodeJS", "ReactJS"]}
                 website="https://www.youtube.com/watch?v=iPaUyOKq-UA"
-                source="https://www.hp.com"
-              />
-              <ProjectCard
-                image={LendingBook}
-                title="Lending Equipment"
-                date="Available Now"
-                description="Lending Equipment & Course Management is a full-stack PERN web app that streamlines equipment lending and course operations, with role-based interfaces for students, staff, professors, and admins."
-                tags={["PostgreSQL", "ExpressJS", "NodeJS", "ReactJS"]}
-                website="https://www.dell.com"
-                source="https://www.hp.com"
+                source="https://github.com/TranThanhLam2005/EventManagementWeb"
               />
               <ProjectCard
                 image={Rental}
@@ -142,7 +124,26 @@ const App = () => {
                 description="Rental Agreement Application is a Java & JavaFX project built with MVC architecture to help tenants, hosts, and owners collaborate easily."
                 tags={["Java", "JavaFx", "MVC Architecture", "ReactJS"]}
                 website="https://www.youtube.com/watch?v=i2APgz8VCCI"
-                source="https://www.hp.com"
+                source="https://github.com/TranThanhLam2005/RentalAgreement"
+              />
+              <ProjectCard
+                image={Campus}
+                title="Campus Companion"
+                date="July 2025 - August 2025"
+                description="Campus Companion is an Android app that helps students connect, explore, and enjoy campus life with events, food ordering, study spots, and smart place recommendations."
+                tags={["Kotlin ", "Jetpack Compose", "Firebase", "MVVM Architecture"]}
+                website="https://www.youtube.com/watch?v=rK8ToKtuQ54"
+                source="https://github.com/TranThanhLam2005/Campus-Companion"
+              />
+              
+              <ProjectCard
+                image={FieldInspection}
+                title="Field Inspection Application"
+                date="August 2025 - September 2025"
+                description="Field Inspection Application is a mobile app designed to streamline the communication between inspectors and supervisor during the inspection process for Phuong Hai industries."
+                tags={["Kotlin ", "Jetpack Compose", "Firebase", "MVVM Architecture"]}
+                website="https://www.youtube.com/watch?v=N1hbhho7Pu8"
+                source = "https://github.com/TranThanhLam2005/FieldInspectionApp"
               />
             </div>
           </div>
