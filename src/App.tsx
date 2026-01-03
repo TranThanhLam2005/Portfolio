@@ -19,6 +19,8 @@ import {
   Briefcase,
   Code2,
   Download,
+  Video,
+  Code,
 } from "lucide-react";
 
 const App = () => {
@@ -40,8 +42,8 @@ const App = () => {
               </div>
               <p className="mt-4  md:text-lg text-left">
                 Software Engineering student at RMIT University. Passionate
-                about competitive programming, AI integration, and building
-                innovative solutions.
+                about web programming, AI integration, and building innovative
+                solutions.
               </p>
               <p className="mt-4 text-sm text-gray-700 text-left">
                 District 8, HoChiMinh • tranthanhlam99nt@gmail.com • (+84)
@@ -62,37 +64,17 @@ const App = () => {
           <div className="mt-20">
             <h2 className="text-2xl font-bold mb-2">About</h2>
             <div className="w-10 h-1 bg-black rounded mb-6"></div>
-
             <p className="mb-4 text-gray-800 leading-relaxed">
-              Ambitious Software Engineering student with proven expertise in
-              innovative solutions and project leadership. Successfully
-              delivered high-quality results by leading teams to achieve top
-              academic distinctions.
-            </p>
-
-            <p className="mb-4 text-gray-800 leading-relaxed">
-              Adept at solving complex technical challenges with efficiency and
-              precision, seeking to integrate AI into applications and enhance
-              productivity in professional workflows through an AI-focused
-              internship or learning opportunity.
-            </p>
-
-            <p className="text-gray-800 leading-relaxed">
-              Currently attending{" "}
-              <a
-                href="https://www.rmit.edu.vn"
-                className="text-black font-bold underline"
-              >
-                RMIT University
-              </a>{" "}
-              a globally ranked institution (Top 123 worldwide, Top 10 in
-              Australia) in HoChiMinh, Vietnam.
+              Ambitious Software Engineering student with a strong passion for
+              web development, demonstrated through leading innovative projects
+              and achieving top academic distinctions. Eager to contribute to
+              fintech solutions and grow as a FullStack Engineer.
             </p>
           </div>
         </FadeInSection>
 
         <FadeInSection>
-          <div className="mt-20">
+          <div className="mt-10">
             {/* Section Title */}
             <h2 className="text-2xl font-bold mb-2">Education</h2>
             <div className="w-10 h-1 bg-black rounded mb-6"></div>
@@ -127,11 +109,10 @@ const App = () => {
 
                 {/* Description */}
                 <p className="mt-3 text-gray-800 leading-relaxed">
-                  Attending a globally ranked institution (Top 123 worldwide,
-                  Top 10 in Australia) in HoChiMinh City, Vietnam. Current GPA:
-                  3.6/4. Focusing on software engineering principles,
-                  algorithms, data structures, and modern development practices.
-                  Actively collaborative projects.
+                  Currently studying at an RMIT university in Ho Chi Minh City,
+                  Vietnam, with a GPA of 3.6/4.0. Focusing on web programming,
+                  algorithms, and modern software development practices through
+                  actively collaborative projects.
                 </p>
               </div>
             </div>
@@ -149,14 +130,14 @@ const App = () => {
                 date="June 2025 - August 2025"
                 description="Lending Equipment Application is a full-stack web platform that helps students borrow school equipment based on their enrolled courses, while also providing lending records and a real-time discussion forum for equipment-related questions."
                 tags={["ReactJS", "NodeJS", "PostgreSQL", "ExpressJS"]}
-                website="/"
+                url="https://lending-equipment.vercel.app/"
                 source="https://github.com/TranThanhLam2005/Lending-Equipment"
               />
               <ProjectCard
                 image={Eventify}
                 title="PlanEvnt - Full Stack Web Application"
                 date="April 2025 - May 2025"
-                description="Event Planning & Management System is a full-stack PERN web app for creating, managing, and joining events, with role-based interfaces for admins, organizers, and attendees."
+                description="Event Planning & Management System is a full-stack PERN web app for creating, managing, and joining events, featuring role-based interfaces for admins, organizers, and attendees to ensure smooth coordination and an intuitive user experience."
                 tags={["PostgreSQL", "ExpressJS", "NodeJS", "ReactJS"]}
                 website="https://www.youtube.com/watch?v=iPaUyOKq-UA"
                 source="https://github.com/TranThanhLam2005/EventManagementWeb"
@@ -165,7 +146,7 @@ const App = () => {
                 image={Rental}
                 title="Rental Agreement Application"
                 date="November 2024 - January 2025"
-                description="Rental Agreement Application is a Java & JavaFX project built with MVC architecture to help tenants, hosts, and owners collaborate easily."
+                description="Rental Agreement Application is a Java and JavaFX project built using the MVC architecture to support smooth collaboration between tenants, hosts, and property owners. The application helps manage rental agreements, and related processes in a structured way."
                 tags={["Java", "JavaFx", "MVC Architecture", "ReactJS"]}
                 website="https://www.youtube.com/watch?v=i2APgz8VCCI"
                 source="https://github.com/TranThanhLam2005/RentalAgreement"
@@ -174,7 +155,7 @@ const App = () => {
                 image={Campus}
                 title="Campus Companion"
                 date="July 2025 - August 2025"
-                description="Campus Companion is an Android app that helps students connect, explore, and enjoy campus life with events, food ordering, study spots, and smart place recommendations."
+                description="Campus Companion is an Android app that helps students connect, explore, and enjoy campus life through events, food ordering, study spots, and smart place recommendations for a more convenient campus experience."
                 tags={[
                   "Kotlin ",
                   "Jetpack Compose",
@@ -200,11 +181,11 @@ const App = () => {
             </p>
             <div className="flex flex-col items-center gap-10 md:gap-14 mt-10">
               {workComponent(
-                "July 2025 - August 2025",
-                "Campus Companion",
+                "July 2025 - September 2025",
+                "Lending Equipment - Full Stack Web Application",
                 "Personal Project",
-                "RMIT University - Mobile Application Course",
-                "Campus Companion is an Android app I developed for my Mobile Development course at RMIT University to support non-academic student life. This project addresses that gap with features such as club and event discovery, food ordering, study room booking, and location-based recommendations. Through this project, I gained hands-on experience in Android app development, UI/UX design, API integration, and implementing real-time location services.",
+                "Personal Project",
+                "This personal project involved building a full-stack application end to end, from UI/UX design and database setup to backend and frontend development. I used a PERN-style architecture with React, TypeScript, Express, and Neon, implemented secure RESTful APIs with authentication, and built a scalable frontend with TailwindCSS and Headless UI, including real-time features and deployment in a production-ready environment.",
                 false
               )}
               {workComponent(
@@ -216,11 +197,11 @@ const App = () => {
                 false
               )}
               {workComponent(
-                "July 2025 - September 2025",
-                "Lending Equipment - Full Stack Web Application",
+                "July 2025 - August 2025",
+                "Campus Companion",
                 "Personal Project",
-                "Personal Project",
-                "This personal project allowed me to build a full-stack application end-to-end designing the UI/UX, setting up the database, and developing both backend and frontend. I implemented a PERN-style architecture with React, TypeScript, Express, and Neon; built secure RESTful APIs with bcryptjs authentication; designed a scalable frontend with Headless UI and TailwindCSS; and added real-time forum discussions using WebSockets. Deploying the system on Vercel and Render further strengthened my task management skills and gave me practical experience working with production-ready features and workflows.",
+                "RMIT University - Mobile Application Course",
+                "Campus Companion is an Android app I developed for my Mobile Development course at RMIT University to support non-academic student life. This project addresses that gap with features such as club and event discovery, food ordering, study room booking, and location-based recommendations. Through this project, I gained hands-on experience in Android app development, UI/UX design, API integration, and implementing real-time location services.",
                 false
               )}
               {workComponent(
@@ -340,6 +321,7 @@ type ProjectProps = {
   tags: string[];
   website?: string;
   source?: string;
+  url?: string;
 };
 
 const ProjectCard = ({
@@ -350,6 +332,7 @@ const ProjectCard = ({
   tags,
   website,
   source,
+  url,
 }: ProjectProps) => {
   return (
     <div className="w-88 min-h-60 bg-white rounded-2xl shadow-2xl transition-transform duration-200 hover:-translate-y-1">
@@ -388,16 +371,28 @@ const ProjectCard = ({
               target="_blank"
               className="flex items-center gap-2 text-white px-3 py-2 rounded-md text-sm font-medium border border-gray-300 hover:bg-gray-100 transition-colors"
             >
-              🌐 Video Demo
+              <Video />
+              Video Demo
             </a>
           )}
+          {url && (
+            <a
+              href={url}
+              target="_blank"
+              className="flex items-center gap-2 text-white px-3 py-2 rounded-md text-sm font-medium border border-gray-300 hover:bg-gray-100 transition-colors"
+            >
+              🌐 Website
+            </a>
+          )}
+
           {source && (
             <a
               href={source}
               target="_blank"
               className="flex items-center gap-2 border border-gray-300 px-3 py-2 rounded-md text-sm font-medium"
             >
-              📄 Source
+              <Code />
+              Source
             </a>
           )}
         </div>
