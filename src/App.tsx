@@ -45,7 +45,7 @@ const App = () => {
                 about web programming, AI integration, and building innovative
                 solutions.
               </p>
-              <p className="mt-4 text-sm text-gray-700 text-left">
+              <p className="mt-4 text-sm text-gray-700 dark:text-zinc-300 text-left">
                 District 8, HoChiMinh • tranthanhlam99nt@gmail.com • (+84)
                 376421569.
               </p>
@@ -63,8 +63,8 @@ const App = () => {
         <FadeInSection>
           <div className="mt-20">
             <h2 className="text-2xl font-bold mb-2">About</h2>
-            <div className="w-10 h-1 bg-black rounded mb-6"></div>
-            <p className="mb-4 text-gray-800 leading-relaxed">
+            <div className="w-10 h-1 bg-black dark:bg-zinc-200 rounded mb-6"></div>
+            <p className="mb-4 text-gray-800 dark:text-zinc-200 leading-relaxed">
               Ambitious Software Engineering student with a strong passion for
               web development, demonstrated through leading innovative projects
               and achieving top academic distinctions. Eager to contribute to
@@ -77,7 +77,7 @@ const App = () => {
           <div className="mt-10">
             {/* Section Title */}
             <h2 className="text-2xl font-bold mb-2">Education</h2>
-            <div className="w-10 h-1 bg-black rounded mb-6"></div>
+            <div className="w-10 h-1 bg-black dark:bg-zinc-200 rounded mb-6"></div>
 
             {/* Education Item */}
             <div className="flex items-start gap-4">
@@ -98,17 +98,17 @@ const App = () => {
                         (Royal Melbourne Institute of Technology)
                       </span>
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 dark:text-zinc-300">
                       Bachelor of Engineering (Software Engineering) (Honours)
                     </p>
                   </div>
-                  <span className="text-gray-500 text-sm">
+                  <span className="text-gray-500 dark:text-zinc-400 text-sm">
                     10/2023 - Present
                   </span>
                 </div>
 
                 {/* Description */}
-                <p className="mt-3 text-gray-800 leading-relaxed">
+                <p className="mt-3 text-gray-800 dark:text-zinc-200 leading-relaxed">
                   Currently studying at an RMIT university in Ho Chi Minh City,
                   Vietnam, with a GPA of 3.6/4.0. Focusing on web programming,
                   algorithms, and modern software development practices through
@@ -122,7 +122,7 @@ const App = () => {
         <FadeInSection delay={0.2}>
           <div className="mt-20">
             <h2 className="text-2xl font-bold mb-2">Project</h2>
-            <div className="w-10 h-1 bg-black rounded mb-6"></div>
+            <div className="w-10 h-1 bg-black dark:bg-zinc-200 rounded mb-6"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-x-4 md:gap-y-6 mt-10 justify-items-center">
               <ProjectCard
                 image={LendingEquipment}
@@ -173,8 +173,8 @@ const App = () => {
             <h2 className="text-2xl font-bold mb-2">
               Leadership and Activities
             </h2>
-            <div className="w-10 h-1 bg-black rounded mb-6"></div>
-            <p className="mb-4 text-gray-800 leading-relaxed">
+            <div className="w-10 h-1 bg-black dark:bg-zinc-200 rounded mb-6"></div>
+            <p className="mb-4 text-gray-800 dark:text-zinc-200 leading-relaxed">
               Throughout my academic journey, I've taken on leadership roles in
               various projects, demonstrating my ability to guide teams toward
               successful outcomes and deliver high-quality solutions.
@@ -219,7 +219,7 @@ const App = () => {
         <FadeInSection>
           <div className="mt-20 mb-20">
             <h2 className="text-2xl font-bold mb-2">Skills & Interests</h2>
-            <div className="w-10 h-1 bg-black rounded mb-6"></div>
+            <div className="w-10 h-1 bg-black dark:bg-zinc-200 rounded mb-6"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 justify-items-center">
               {featureComponent(
                 <Code2 className="text-green-500" />, // Programming / coding symbol
@@ -272,15 +272,15 @@ const App = () => {
         </FadeInSection>
       </section>
       <section className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 transform transition-transform duration-300 hover:-translate-y-2">
-        <div className="flex items-center gap-6 px-8 py-4 bg-white rounded-full shadow-xl">
+        <div className="flex items-center gap-6 px-8 py-4 bg-white dark:bg-zinc-800 rounded-full shadow-xl">
           <Home
             onClick={() => window.location.reload()}
-            className="w-6 h-6 text-gray-600 transition-transform duration-200 hover:scale-125 cursor-pointer"
+            className="w-6 h-6 text-gray-600 dark:text-zinc-300 transition-transform duration-200 hover:scale-125 cursor-pointer"
             strokeWidth={1.5}
           />
           <a href={CV} download="Lam_Tran_CV.pdf" title="Download CV">
             <Download
-              className="w-6 h-6 text-gray-600 transition-transform duration-200 hover:scale-125"
+              className="w-6 h-6 text-gray-600 dark:text-zinc-300 transition-transform duration-200 hover:scale-125"
               strokeWidth={1.5}
             />
           </a>
@@ -292,7 +292,7 @@ const App = () => {
             title="Visit GitHub Profile"
           >
             <Code2
-              className="w-6 h-6 text-gray-600 transition-transform duration-200 hover:scale-125"
+              className="w-6 h-6 text-gray-600 dark:text-zinc-300 transition-transform duration-200 hover:scale-125"
               strokeWidth={1.5}
             />
           </a>
@@ -303,7 +303,7 @@ const App = () => {
             title="Visit LinkedIn Profile"
           >
             <Briefcase
-              className="w-6 h-6 text-gray-600 transition-transform duration-200 hover:scale-125"
+              className="w-6 h-6 text-gray-600 dark:text-zinc-300 transition-transform duration-200 hover:scale-125"
               strokeWidth={1.5}
             />
           </a>
@@ -335,7 +335,7 @@ const ProjectCard = ({
   url,
 }: ProjectProps) => {
   return (
-    <div className="w-88 min-h-60 bg-white rounded-2xl shadow-2xl transition-transform duration-200 hover:-translate-y-1">
+    <div className="w-88 min-h-60 bg-white dark:bg-zinc-800 rounded-2xl shadow-2xl transition-transform duration-200 hover:-translate-y-1">
       {/* Image */}
       <div className="p-3 overflow-hidden rounded-t-2xl">
         <img
@@ -348,15 +348,15 @@ const ProjectCard = ({
       {/* Content */}
       <div className="p-4">
         <h2 className="text-lg font-bold">{title}</h2>
-        <p className="text-gray-500 text-sm mb-3">{date}</p>
-        <p className="text-gray-600 leading-relaxed mb-4">{description}</p>
+        <p className="text-gray-500 dark:text-zinc-400 text-sm mb-3">{date}</p>
+        <p className="text-gray-600 dark:text-zinc-300 leading-relaxed mb-4">{description}</p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-4">
           {tags.map((tag, idx) => (
             <span
               key={idx}
-              className="bg-black text-white text-xs px-3 py-1 rounded-full"
+              className="bg-black dark:bg-zinc-200 text-white dark:text-zinc-900 text-xs px-3 py-1 rounded-full"
             >
               {tag}
             </span>
@@ -369,7 +369,7 @@ const ProjectCard = ({
             <a
               href={website}
               target="_blank"
-              className="flex items-center gap-2 text-white px-3 py-2 rounded-md text-sm font-medium border border-gray-300 hover:bg-gray-100 transition-colors"
+              className="flex items-center gap-2 text-white dark:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-zinc-700 hover:bg-gray-100 dark:hover:bg-zinc-700/50 transition-colors"
             >
               <Video />
               Video Demo
@@ -379,7 +379,7 @@ const ProjectCard = ({
             <a
               href={url}
               target="_blank"
-              className="flex items-center gap-2 text-white px-3 py-2 rounded-md text-sm font-medium border border-gray-300 hover:bg-gray-100 transition-colors"
+              className="flex items-center gap-2 text-white dark:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-zinc-700 hover:bg-gray-100 dark:hover:bg-zinc-700/50 transition-colors"
             >
               🌐 Website
             </a>
@@ -389,7 +389,7 @@ const ProjectCard = ({
             <a
               href={source}
               target="_blank"
-              className="flex items-center gap-2 border border-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+              className="flex items-center gap-2 border border-gray-300 dark:border-zinc-700 px-3 py-2 rounded-md text-sm font-medium"
             >
               <Code />
               Source
@@ -411,24 +411,24 @@ const workComponent = (
   return (
     <div className="flex flex-row justify-center items-start md:gap-x-20 gap-x-10">
       <div className="relative flex flex-col items-center w-full md:w-auto mb-4 md:mb-0">
-        <div className="flex items-center justify-center h-18 w-18 rounded-full shadow-xl border-1 border-gray-200 ">
+        <div className="flex items-center justify-center h-18 w-18 rounded-full shadow-xl border-1 border-gray-200 dark:border-zinc-700 ">
           <img
             src={RMIT}
             alt={title}
-            className="w-4/5 rounded-full shadow-md border-1 border-gray-200"
+            className="w-4/5 rounded-full shadow-md border-1 border-gray-200 dark:border-zinc-700"
           />
         </div>
         {/* Connector line */}
         {!isLast && (
-          <div className="block absolute top-18 h-97 md:h-59 w-0.5 bg-gray-200" />
+          <div className="block absolute top-18 h-97 md:h-59 w-0.5 bg-gray-200 dark:bg-zinc-700" />
         )}
       </div>
       <div className="flex flex-col max-w-md">
-        <p className="text-base font-semibold text-gray-400">{interval}</p>
+        <p className="text-base font-semibold text-gray-400 dark:text-zinc-400">{interval}</p>
         <h2 className="text-xl font-semibold">{title}</h2>
         <h2 className="text-base font-semibold">{role}</h2>
-        <p className="text-sm text-gray-400 mt-1">{job}</p>
-        <p className="text-sm font-normal text-gray-700 mt-3">{description}</p>
+        <p className="text-sm text-gray-400 dark:text-zinc-400 mt-1">{job}</p>
+        <p className="text-sm font-normal text-gray-700 dark:text-zinc-300 mt-3">{description}</p>
       </div>
     </div>
   );
@@ -446,9 +446,9 @@ const featureComponent = (
       {skills.map((skill, index) => (
         <div
           key={index}
-          className="m-1 py-1 px-2 bg-black w-fit inline-block  rounded-lg"
+          className="m-1 py-1 px-2 bg-black dark:bg-zinc-200 w-fit inline-block  rounded-lg"
         >
-          <span className="text-white">{skill}</span>
+          <span className="text-white dark:text-zinc-900">{skill}</span>
         </div>
       ))}
     </div>
